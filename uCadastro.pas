@@ -4,7 +4,7 @@ interface
 
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
-  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls, Vcl.Mask;
 
 type
   TCADASTRO = class(TForm)
@@ -28,7 +28,6 @@ type
     Label13: TLabel;
     Label14: TLabel;
     Label15: TLabel;
-    edtFuncionario: TEdit;
     edtCargo_Funcionario: TEdit;
     edtValPago: TEdit;
     edtMes: TEdit;
@@ -40,7 +39,12 @@ type
     edtData: TEdit;
     Button1: TButton;
     Button2: TButton;
+    cbItens: TComboBox;
+    edtFuncionario: TEdit;
+    maskCPF_CNPJ: TMaskEdit;
+    procedure Button1Click(Sender: TObject);
   private
+    procedure EnviarInformacoes();
     { Private declarations }
   public
     { Public declarations }
@@ -50,7 +54,31 @@ var
   CADASTRO: TCADASTRO;
 
 implementation
-
+uses uRecibo;
 {$R *.dfm}
+
+procedure TCADASTRO.Button1Click(Sender: TObject);
+begin
+  frmRecibo:= TfrmRecibo.Create(Application);
+  try
+    EnviarInformacoes();
+    frmRecibo.RLReport1.Preview()
+  finally
+    frmRecibo.Free;
+  end;
+end;
+
+procedure TCADASTRO.EnviarInformacoes();
+begin
+  try
+    frmRecibo.lbNome_Empregado.Caption := edtFuncionario.Text ;
+    frmRecibo.lbNome_Empregador.Caption := edtEmpregador.Text;
+      if edtCargo_Empregador.Text <> null then
+        frmRecibo.lbNome_Empregador.Caption := edtEmpregador.Text + ' - ' + edtCargo_Empregador.Text;
+    frmRecibo.lbCidadeEstado.Caption := edtCidade.Text + ' - ' + edtEstado.Text;
+  finally
+    close;
+  end;
+  end;
 
 end.

@@ -2,8 +2,8 @@ object CADASTRO: TCADASTRO
   Left = 0
   Top = 0
   Caption = 'CADASTRO'
-  ClientHeight = 408
-  ClientWidth = 578
+  ClientHeight = 448
+  ClientWidth = 727
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -17,7 +17,7 @@ object CADASTRO: TCADASTRO
   object Label1: TLabel
     Left = 8
     Top = 8
-    Width = 561
+    Width = 711
     Height = 25
     Alignment = taCenter
     AutoSize = False
@@ -33,9 +33,11 @@ object CADASTRO: TCADASTRO
   object Panel1: TPanel
     Left = 8
     Top = 39
-    Width = 561
-    Height = 362
+    Width = 711
+    Height = 401
     BorderStyle = bsSingle
+    Color = 8553090
+    ParentBackground = False
     TabOrder = 0
     object Label2: TLabel
       Left = 8
@@ -71,7 +73,7 @@ object CADASTRO: TCADASTRO
     end
     object Label5: TLabel
       Left = 8
-      Top = 57
+      Top = 104
       Width = 47
       Height = 11
       Caption = 'Funcionario'
@@ -83,8 +85,8 @@ object CADASTRO: TCADASTRO
       ParentFont = False
     end
     object Label6: TLabel
-      Left = 289
-      Top = 57
+      Left = 8
+      Top = 140
       Width = 25
       Height = 11
       Caption = 'Cargo'
@@ -97,9 +99,10 @@ object CADASTRO: TCADASTRO
     end
     object edtEmpregador: TEdit
       Left = 8
-      Top = 27
+      Top = 26
       Width = 275
       Height = 19
+      CharCase = ecUpperCase
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -9
@@ -110,9 +113,10 @@ object CADASTRO: TCADASTRO
     end
     object edtCargo_Empregador: TEdit
       Left = 289
-      Top = 27
+      Top = 26
       Width = 241
       Height = 19
+      CharCase = ecUpperCase
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -9
@@ -121,11 +125,12 @@ object CADASTRO: TCADASTRO
       ParentFont = False
       TabOrder = 1
     end
-    object edtFuncionario: TEdit
+    object edtCargo_Funcionario: TEdit
       Left = 8
-      Top = 70
-      Width = 275
+      Top = 151
+      Width = 241
       Height = 19
+      CharCase = ecUpperCase
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
       Font.Height = -9
@@ -134,26 +139,15 @@ object CADASTRO: TCADASTRO
       ParentFont = False
       TabOrder = 2
     end
-    object edtCargo_Funcionario: TEdit
-      Left = 289
-      Top = 70
-      Width = 241
-      Height = 19
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -9
-      Font.Name = 'Tahoma'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 3
-    end
     object Panel2: TPanel
-      Left = 8
-      Top = 114
-      Width = 401
-      Height = 233
+      Left = 289
+      Top = 51
+      Width = 393
+      Height = 157
       BorderStyle = bsSingle
-      TabOrder = 4
+      Color = 12171705
+      ParentBackground = False
+      TabOrder = 3
       object Label7: TLabel
         Left = 8
         Top = 8
@@ -276,6 +270,8 @@ object CADASTRO: TCADASTRO
         Top = 21
         Width = 121
         Height = 19
+        CharCase = ecUpperCase
+        Color = 13816530
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -9
@@ -289,6 +285,8 @@ object CADASTRO: TCADASTRO
         Top = 21
         Width = 121
         Height = 19
+        CharCase = ecUpperCase
+        Color = 13816530
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -9
@@ -302,6 +300,8 @@ object CADASTRO: TCADASTRO
         Top = 21
         Width = 121
         Height = 19
+        CharCase = ecUpperCase
+        Color = 13816530
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -9
@@ -315,6 +315,8 @@ object CADASTRO: TCADASTRO
         Top = 66
         Width = 121
         Height = 19
+        CharCase = ecUpperCase
+        Color = 13816530
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -9
@@ -328,6 +330,8 @@ object CADASTRO: TCADASTRO
         Top = 66
         Width = 121
         Height = 19
+        CharCase = ecUpperCase
+        Color = 13816530
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -9
@@ -341,6 +345,8 @@ object CADASTRO: TCADASTRO
         Top = 66
         Width = 121
         Height = 19
+        CharCase = ecUpperCase
+        Color = 13816530
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -9
@@ -354,6 +360,8 @@ object CADASTRO: TCADASTRO
         Top = 109
         Width = 121
         Height = 19
+        CharCase = ecUpperCase
+        Color = 13816530
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -9
@@ -367,6 +375,8 @@ object CADASTRO: TCADASTRO
         Top = 109
         Width = 121
         Height = 19
+        CharCase = ecUpperCase
+        Color = 13816530
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -9
@@ -380,6 +390,8 @@ object CADASTRO: TCADASTRO
         Top = 109
         Width = 121
         Height = 19
+        CharCase = ecUpperCase
+        Color = 13816530
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWindowText
         Font.Height = -9
@@ -390,20 +402,56 @@ object CADASTRO: TCADASTRO
       end
     end
     object Button1: TButton
-      Left = 464
-      Top = 297
+      Left = 8
+      Top = 369
       Width = 75
       Height = 25
       Caption = 'IMPRIMIR'
-      TabOrder = 5
+      TabOrder = 4
+      OnClick = Button1Click
     end
     object Button2: TButton
-      Left = 464
-      Top = 328
+      Left = 89
+      Top = 368
       Width = 75
       Height = 25
       Caption = 'SAIR'
+      TabOrder = 5
+    end
+    object cbItens: TComboBox
+      Left = 8
+      Top = 50
+      Width = 97
+      Height = 21
+      ItemIndex = 0
       TabOrder = 6
+      Text = 'Selecionar'
+      Items.Strings = (
+        'Selecionar'
+        'Cpf'
+        'Cnpj')
+    end
+    object edtFuncionario: TEdit
+      Left = 8
+      Top = 115
+      Width = 241
+      Height = 19
+      CharCase = ecUpperCase
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -9
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 7
+    end
+    object maskCPF_CNPJ: TMaskEdit
+      Left = 8
+      Top = 72
+      Width = 121
+      Height = 21
+      TabOrder = 8
+      Text = ''
     end
   end
 end

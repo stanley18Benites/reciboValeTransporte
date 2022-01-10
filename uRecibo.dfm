@@ -37,23 +37,10 @@ object frmRecibo: TfrmRecibo
       Borders.FixedTop = True
       Borders.FixedRight = True
       Borders.FixedBottom = True
-      object lbNome: TRLLabel
+      object lbNome_Empregador: TRLLabel
         Left = 24
         Top = 24
-        Width = 241
-        Height = 16
-        AutoSize = False
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -12
-        Font.Name = 'Arial'
-        Font.Style = []
-        ParentFont = False
-      end
-      object lbCPF: TRLLabel
-        Left = 271
-        Top = 24
-        Width = 241
+        Width = 488
         Height = 16
         AutoSize = False
         Font.Charset = DEFAULT_CHARSET
@@ -65,7 +52,7 @@ object frmRecibo: TfrmRecibo
       end
       object lbCidade: TRLLabel
         Left = 24
-        Top = 56
+        Top = 46
         Width = 241
         Height = 16
         AutoSize = False
@@ -78,7 +65,7 @@ object frmRecibo: TfrmRecibo
       end
       object lbEstado: TRLLabel
         Left = 271
-        Top = 56
+        Top = 46
         Width = 241
         Height = 16
         AutoSize = False
@@ -90,12 +77,17 @@ object frmRecibo: TfrmRecibo
         ParentFont = False
       end
       object lbReciboValeTransporte: TRLLabel
-        Left = 120
-        Top = 128
-        Width = 290
+        Left = 128
+        Top = 120
+        Width = 265
         Height = 16
-        Alignment = taCenter
         AutoSize = False
+        Borders.Sides = sdCustom
+        Borders.DrawLeft = False
+        Borders.DrawTop = False
+        Borders.DrawRight = False
+        Borders.DrawBottom = True
+        Borders.FixedBottom = True
         Caption = 'RECIBO DE VALE TRANSPORTE DO MES DE '
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
@@ -152,6 +144,7 @@ object frmRecibo: TfrmRecibo
           Borders.DrawRight = False
           Borders.DrawBottom = True
           Borders.FixedBottom = True
+          Caption = 'QUANT. MENSAL'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
           Font.Height = -12
@@ -163,7 +156,7 @@ object frmRecibo: TfrmRecibo
         object RLLabel3: TRLLabel
           Left = 332
           Top = 1
-          Width = 202
+          Width = 150
           Height = 16
           Alignment = taCenter
           AutoSize = False
@@ -173,6 +166,7 @@ object frmRecibo: TfrmRecibo
           Borders.DrawRight = False
           Borders.DrawBottom = True
           Borders.FixedBottom = True
+          Caption = 'VALOR VALE (R$)'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
           Font.Height = -12
@@ -182,9 +176,9 @@ object frmRecibo: TfrmRecibo
           ParentFont = False
         end
         object RLLabel4: TRLLabel
-          Left = 533
+          Left = 480
           Top = 1
-          Width = 88
+          Width = 142
           Height = 16
           Alignment = taCenter
           AutoSize = False
@@ -194,6 +188,7 @@ object frmRecibo: TfrmRecibo
           Borders.DrawRight = False
           Borders.DrawBottom = True
           Borders.FixedBottom = True
+          Caption = 'CUSTO TOTAL (R$)'
           Font.Charset = DEFAULT_CHARSET
           Font.Color = clBlack
           Font.Height = -12
@@ -202,11 +197,12 @@ object frmRecibo: TfrmRecibo
           Layout = tlCenter
           ParentFont = False
         end
-        object RLLabel5: TRLLabel
+        object lbNome_Empregado: TRLLabel
           Left = 4
           Top = 17
           Width = 152
-          Height = 81
+          Height = 82
+          Alignment = taCenter
           AutoSize = False
           Borders.Sides = sdCustom
           Borders.DrawLeft = False
@@ -218,13 +214,14 @@ object frmRecibo: TfrmRecibo
           Font.Height = -12
           Font.Name = 'Arial'
           Font.Style = []
+          Layout = tlCenter
           ParentFont = False
         end
         object RLLabel1: TRLLabel
           Left = 155
           Top = 17
           Width = 178
-          Height = 81
+          Height = 82
           AutoSize = False
           Borders.Sides = sdCustom
           Borders.DrawLeft = False
@@ -236,13 +233,14 @@ object frmRecibo: TfrmRecibo
           Font.Height = -12
           Font.Name = 'Arial'
           Font.Style = []
+          Layout = tlCenter
           ParentFont = False
         end
         object RLLabel6: TRLLabel
           Left = 332
           Top = 17
-          Width = 202
-          Height = 81
+          Width = 149
+          Height = 82
           AutoSize = False
           Borders.Sides = sdCustom
           Borders.DrawLeft = False
@@ -254,13 +252,14 @@ object frmRecibo: TfrmRecibo
           Font.Height = -12
           Font.Name = 'Arial'
           Font.Style = []
+          Layout = tlCenter
           ParentFont = False
         end
         object RLLabel7: TRLLabel
-          Left = 533
+          Left = 479
           Top = 17
-          Width = 88
-          Height = 81
+          Width = 142
+          Height = 82
           AutoSize = False
           Borders.Sides = sdCustom
           Borders.DrawLeft = False
@@ -272,6 +271,7 @@ object frmRecibo: TfrmRecibo
           Font.Height = -12
           Font.Name = 'Arial'
           Font.Style = []
+          Layout = tlCenter
           ParentFont = False
         end
       end
@@ -282,20 +282,6 @@ object frmRecibo: TfrmRecibo
         Height = 15
         AutoSize = False
         Caption = 'Recebi de '
-        Font.Charset = DEFAULT_CHARSET
-        Font.Color = clBlack
-        Font.Height = -12
-        Font.Name = 'Arial'
-        Font.Style = []
-        ParentFont = False
-      end
-      object lbMes: TRLLabel
-        Left = 419
-        Top = 128
-        Width = 110
-        Height = 16
-        Alignment = taCenter
-        AutoSize = False
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clBlack
         Font.Height = -12
@@ -346,7 +332,7 @@ object frmRecibo: TfrmRecibo
         ParentFont = False
       end
       object RLLabel12: TRLLabel
-        Left = 44
+        Left = 40
         Top = 307
         Width = 329
         Height = 15

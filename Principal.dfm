@@ -16,7 +16,7 @@ object MENU: TMENU
   TextHeight = 13
   object lbNome: TLabel
     Left = 0
-    Top = 8
+    Top = 26
     Width = 483
     Height = 137
     Align = alCustom
@@ -26,6 +26,23 @@ object MENU: TMENU
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
     Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold, fsItalic, fsUnderline]
+    ParentFont = False
+    Layout = tlCenter
+  end
+  object Label1: TLabel
+    Left = 0
+    Top = 99
+    Width = 483
+    Height = 27
+    Align = alCustom
+    Alignment = taCenter
+    AutoSize = False
+    Caption = '(vale transporte)'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
     Font.Name = 'Tahoma'
     Font.Style = [fsBold, fsItalic, fsUnderline]
     ParentFont = False
@@ -47,5 +64,6 @@ object MENU: TMENU
     Height = 25
     Caption = 'SAIR'
     TabOrder = 1
+    OnClick = Button2Click
   end
 end

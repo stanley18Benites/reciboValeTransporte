@@ -10,8 +10,7 @@ type
   TfrmRecibo = class(TForm)
     RLReport1: TRLReport;
     RLPanel1: TRLPanel;
-    lbNome: TRLLabel;
-    lbCPF: TRLLabel;
+    lbNome_Empregador: TRLLabel;
     lbCidade: TRLLabel;
     lbEstado: TRLLabel;
     lbReciboValeTransporte: TRLLabel;
@@ -20,9 +19,8 @@ type
     RLLabel2: TRLLabel;
     RLLabel3: TRLLabel;
     RLLabel4: TRLLabel;
-    RLLabel5: TRLLabel;
+    lbNome_Empregado: TRLLabel;
     RLLabel9: TRLLabel;
-    lbMes: TRLLabel;
     RLLabel1: TRLLabel;
     RLLabel6: TRLLabel;
     RLLabel7: TRLLabel;

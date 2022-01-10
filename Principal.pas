@@ -11,7 +11,9 @@ type
     lbNome: TLabel;
     btnEntrar: TButton;
     Button2: TButton;
+    Label1: TLabel;
     procedure btnEntrarClick(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -33,6 +35,11 @@ begin
   finally
     CADASTRO.Free;
   end;
+end;
+
+procedure TMENU.Button2Click(Sender: TObject);
+begin
+  Application.Terminate;
 end;
 
 end.
