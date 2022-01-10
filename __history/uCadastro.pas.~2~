@@ -1,0 +1,54 @@
+unit uCadastro;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TCADASTRO = class(TForm)
+    Panel1: TPanel;
+    Label1: TLabel;
+    Label2: TLabel;
+    Edit1: TEdit;
+    Edit2: TEdit;
+    Label3: TLabel;
+    Label4: TLabel;
+    Edit3: TEdit;
+    Label5: TLabel;
+    Label6: TLabel;
+    Edit4: TEdit;
+    Panel2: TPanel;
+    Label7: TLabel;
+    Edit5: TEdit;
+    Label8: TLabel;
+    Edit6: TEdit;
+    Label9: TLabel;
+    Edit7: TEdit;
+    Label10: TLabel;
+    Edit8: TEdit;
+    Label11: TLabel;
+    Edit9: TEdit;
+    Label12: TLabel;
+    Edit10: TEdit;
+    Label13: TLabel;
+    Edit11: TEdit;
+    Label14: TLabel;
+    Edit12: TEdit;
+    Edit13: TEdit;
+    Label15: TLabel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  CADASTRO: TCADASTRO;
+
+implementation
+
+{$R *.dfm}
+
+end.

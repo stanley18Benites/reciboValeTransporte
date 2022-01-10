@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/11/26 11:43:22.000.713,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/01/10 09:32:01.000.810,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/01/10 09:32:56.000.387,C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\projetos\RECIBO_ValeTransporte\Principal.pas</Transaction>
+    <Transaction>2022/01/10 09:32:56.000.387,C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\projetos\RECIBO_ValeTransporte\Principal.dfm</Transaction>
+    <Transaction>2022/01/10 09:37:03.000.740,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/01/10 09:44:33.000.776,C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\projetos\RECIBO_ValeTransporte\uCadastro.pas</Transaction>
+    <Transaction>2022/01/10 09:44:33.000.776,C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\projetos\RECIBO_ValeTransporte\uCadastro.dfm</Transaction>
+    <Transaction>2022/01/10 09:44:52.000.082,C:\Users\User\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\projetos\RECIBO_ValeTransporte\Projeto_Recibo.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
