@@ -1,0 +1,142 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'frmRecibo'
+  ClientHeight = 493
+  ClientWidth = 810
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object RLReport1: TRLReport
+    Left = 8
+    Top = 8
+    Width = 794
+    Height = 1123
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -13
+    Font.Name = 'Arial'
+    Font.Style = []
+    object RLPanel1: TRLPanel
+      Left = 33
+      Top = 41
+      Width = 712
+      Height = 432
+      Borders.Sides = sdCustom
+      Borders.DrawLeft = True
+      Borders.DrawTop = True
+      Borders.DrawRight = True
+      Borders.DrawBottom = True
+      Borders.FixedLeft = True
+      Borders.FixedTop = True
+      Borders.FixedRight = True
+      Borders.FixedBottom = True
+      object lbNome: TRLLabel
+        Left = 24
+        Top = 24
+        Width = 241
+        Height = 16
+        AutoSize = False
+      end
+      object lbCPF: TRLLabel
+        Left = 271
+        Top = 24
+        Width = 241
+        Height = 16
+        AutoSize = False
+      end
+      object lbCidade: TRLLabel
+        Left = 24
+        Top = 56
+        Width = 241
+        Height = 16
+        AutoSize = False
+      end
+      object lbEstado: TRLLabel
+        Left = 271
+        Top = 56
+        Width = 241
+        Height = 16
+        AutoSize = False
+      end
+      object lbReciboValeTransporte: TRLLabel
+        Left = 104
+        Top = 128
+        Width = 408
+        Height = 16
+        Alignment = taCenter
+        AutoSize = False
+      end
+      object RLPanel2: TRLPanel
+        Left = 40
+        Top = 150
+        Width = 641
+        Height = 99
+        object RLLabel1: TRLLabel
+          Left = 3
+          Top = 3
+          Width = 158
+          Height = 16
+        end
+        object RLLabel2: TRLLabel
+          Left = 155
+          Top = 3
+          Width = 178
+          Height = 16
+          AutoSize = False
+        end
+        object RLLabel3: TRLLabel
+          Left = 339
+          Top = 3
+          Width = 202
+          Height = 16
+          AutoSize = False
+        end
+        object RLLabel4: TRLLabel
+          Left = 547
+          Top = 3
+          Width = 86
+          Height = 16
+          AutoSize = False
+        end
+        object RLLabel5: TRLLabel
+          Left = 11
+          Top = 51
+          Width = 158
+          Height = 16
+        end
+        object RLLabel6: TRLLabel
+          Left = 155
+          Top = 51
+          Width = 158
+          Height = 16
+        end
+        object RLLabel7: TRLLabel
+          Left = 339
+          Top = 59
+          Width = 158
+          Height = 16
+        end
+        object RLLabel8: TRLLabel
+          Left = 503
+          Top = 59
+          Width = 158
+          Height = 16
+        end
+      end
+      object RLLabel9: TRLLabel
+        Left = 40
+        Top = 267
+        Width = 66
+        Height = 16
+        Caption = 'Recebi de '
+      end
+    end
+  end
+end
