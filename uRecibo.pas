@@ -11,8 +11,7 @@ type
     RLReport1: TRLReport;
     RLPanel1: TRLPanel;
     lbNome_Empregador: TRLLabel;
-    lbCidade: TRLLabel;
-    lbEstado: TRLLabel;
+    lbCidadeEstado: TRLLabel;
     lbReciboValeTransporte: TRLLabel;
     RLPanel2: TRLPanel;
     lbCargo: TRLLabel;
@@ -26,11 +25,15 @@ type
     RLLabel7: TRLLabel;
     RLLabel8: TRLLabel;
     RLLabel10: TRLLabel;
-    RLLabel11: TRLLabel;
+    lbQuantia: TRLLabel;
     RLLabel12: TRLLabel;
-    lbCidade_: TRLLabel;
+    lbValorExtenso: TRLLabel;
     lbFuncionario: TRLLabel;
     lbData: TRLLabel;
+    RLLabel5: TRLLabel;
+    lbNomeEmpregador: TRLLabel;
+    lbMes: TRLLabel;
+    lbPeriodo: TRLLabel;
   private
     { Private declarations }
   public
