@@ -1,2 +1,2 @@
 # reciboValeTransporte
-Progama totalemente em delphi xe8.
+Progama totalmente em delphi xe8.
